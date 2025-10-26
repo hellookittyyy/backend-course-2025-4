@@ -2,7 +2,8 @@
   "name": "backend-course-2025-4",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/hellookittyyy/backend-course-2025-4#readme",
   "dependencies": {
     "commander": "^14.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
