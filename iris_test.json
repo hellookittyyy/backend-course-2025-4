@@ -1,0 +1,12 @@
+[
+  {"sepal.length":7.1,"sepal.width":2.5,"petal.length":9.9,"petal.width":8.8,"variety":"SuperFlower"},
+  {"sepal.length":4.3,"sepal.width":3.1,"petal.length":0.5,"petal.width":0.2,"variety":"MiniFlower"},
+  {"sepal.length":5.6,"sepal.width":3.8,"petal.length":2.2,"petal.width":1.1,"variety":"MegaBloom"},
+  {"sepal.length":6.2,"sepal.width":3.4,"petal.length":1.0,"petal.width":0.5,"variety":"TinyPetal"},
+  {"sepal.length":5.9,"sepal.width":3.0,"petal.length":3.7,"petal.width":2.2,"variety":"GiantFlower"},
+  {"sepal.length":4.8,"sepal.width":2.7,"petal.length":0.9,"petal.width":0.4,"variety":"MicroBloom"},
+  {"sepal.length":6.5,"sepal.width":3.3,"petal.length":4.5,"petal.width":1.8,"variety":"HyperPlant"},
+  {"sepal.length":5.0,"sepal.width":3.5,"petal.length":1.6,"petal.width":0.3,"variety":"NanoFlower"},
+  {"sepal.length":7.0,"sepal.width":3.2,"petal.length":5.5,"petal.width":2.1,"variety":"UltraBloom"},
+  {"sepal.length":4.4,"sepal.width":3.0,"petal.length":0.7,"petal.width":0.1,"variety":"MiniPetal"}
+]

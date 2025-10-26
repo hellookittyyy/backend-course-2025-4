@@ -4,6 +4,7 @@ import fs from 'fs';
 import fsp from 'fs/promises';   
 import url from 'url';            
 import { XMLBuilder } from 'fast-xml-parser'; 
+import { error } from 'console';
 
 
 program
@@ -37,9 +38,11 @@ const server = http.createServer(async (req, res) => {
     return;
   }
   const query = parsedUrl.query;
-
+//   console.log('Query:', query);
   const showVariety = query.variety === 'true';
   const minPetalLength = parseFloat(query.min_petal_length); 
+//   console.log('Query parameters:', { showVariety, minPetalLength });
+//   console.log('min_petal_length:',query.min_petal_length)
 
   try {
     const fileData = await fsp.readFile(inputFile, 'utf8');
@@ -50,6 +53,9 @@ const server = http.createServer(async (req, res) => {
       jsonData = jsonData.filter(
         (flower) => flower['petal.length'] > minPetalLength
       );
+    }
+    else {
+      return error('min_petal_length is not a number');
     }
 
     const flowersForXml = jsonData.map((flower) => {
