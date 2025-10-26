@@ -33,7 +33,7 @@ const server = http.createServer(async (req, res) => {
 //   console.log('Parsed URL:', parsedUrl);
   if (parsedUrl.pathname !== '/') {
     res.writeHead(404, { 'Content-Type': 'text/plain' });
-    res.end('Not Found');
+    res.end('\nNot Found');
     return;
   }
   const query = parsedUrl.query;
